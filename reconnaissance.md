@@ -1,4 +1,4 @@
-# 🕵️‍♀️ Reconnaissance Techniques – Task 2
+# 🕵️‍♀️ Reconnaissance Techniques 
 
 This section outlines both passive and active reconnaissance strategies used to gather intelligence about a target system. These methods are essential for understanding the network landscape before launching deeper assessments.
 

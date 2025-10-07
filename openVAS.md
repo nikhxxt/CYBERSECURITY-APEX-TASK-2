@@ -8,13 +8,13 @@
 
 ## 🎯 Purpose
 
-To conduct a full vulnerability assessment of the Metasploitable2 virtual machine using OpenVAS, identify exploitable services and misconfigurations, and propose effective remediation strategies.
+To conduct a comprehensive vulnerability assessment of the Metasploitable2 virtual machine using OpenVAS, identify exploitable services and misconfigurations, and recommend effective remediation strategies.
 
 ---
 
 ## 🧪 Scan Overview
 
-An in-depth scan was performed using OpenVAS, targeting all active ports and services on the Metasploitable2 VM. The scan revealed a wide range of critical and high-severity vulnerabilities, primarily caused by outdated software and insecure protocols. These findings reflect real-world risks that can arise from legacy systems left unpatched.
+An in-depth scan was performed using OpenVAS, targeting all active ports and services on the Metasploitable2 VM. The scan uncovered a range of critical and high-severity vulnerabilities, primarily caused by outdated software and insecure protocols. These findings reflect real-world risks that can arise from legacy systems left unpatched.
 
 ---
 

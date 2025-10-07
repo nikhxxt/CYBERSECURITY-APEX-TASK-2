@@ -84,5 +84,3 @@ This hands-on exercise reinforced key cybersecurity concepts:
 - **Wireshark Utility:** Packet-level visibility is essential for diagnosing threats, analyzing performance, and defending networks.
 
 ---
-
-📌 This report aligns with **Task 2: Network Security & Scanning** under the ApexPlanet internship. Include this in your GitHub repo alongside your scan and firewall documentation.

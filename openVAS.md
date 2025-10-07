@@ -1,67 +1,92 @@
-# 🔍 Vulnerability Assessment Report – Metasploitable2
+# 🛡️ Vulnerability Assessment – Metasploitable2 VM
 
+**Date:** September 19, 2025  
+**Analyst:** Pratham Khairmode  
+**Internship Task:** Network Security & Scanning – Task 2  
 **Objective:**  
-To evaluate the security posture of the Metasploitable2 virtual machine by identifying exploitable services, outdated software, and misconfigurations using a full-system vulnerability scan.
+To perform a comprehensive vulnerability scan on the Metasploitable2 virtual machine, identify exploitable services and misconfigurations, and recommend mitigation strategies.
 
 ---
 
-## 🧪 Scan Overview
+## 🧪 Scan Summary
 
-A deep scan was conducted using a robust vulnerability assessment tool, targeting all active ports and services on the Metasploitable2 VM. The goal was to uncover weaknesses that could be leveraged by attackers.
-
-The results revealed a system riddled with critical and high-risk vulnerabilities, many stemming from legacy software and insecure configurations.
+A full-system vulnerability scan was conducted using an industry-standard assessment tool. The scan targeted all open ports and services running on the Metasploitable2 VM. The results revealed a wide range of critical and high-severity issues, primarily due to outdated software and insecure configurations.
 
 ---
 
-## 🚨 Critical Vulnerabilities
+## 🚨 Major Exploitable Risks
 
-Several high-impact issues were discovered that could allow full system compromise:
+The following vulnerabilities pose immediate threats and could allow attackers to gain full control of the system:
 
-- **vsftpd 2.3.4 Backdoor:**  
-  This FTP service contains a known backdoor that permits unauthenticated root access. Exploiting this could result in total control of the host.
+- **vsftpd 2.3.4 – Backdoor Access**  
+  This FTP service contains a known backdoor that allows unauthenticated users to gain root access.
 
-- **UnrealIRCd 3.2.8.1 Remote Execution:**  
-  The IRC daemon includes a hidden backdoor enabling attackers to execute arbitrary commands remotely.
+- **UnrealIRCd 3.2.8.1 – Remote Code Execution**  
+  A hidden backdoor in this IRC daemon enables attackers to execute arbitrary commands remotely.
 
-- **Apache Tomcat/Coyote Jserv Buffer Overflow:**  
-  A flaw in the Jserv protocol implementation could allow attackers to inject malicious code and execute it with elevated privileges.
+- **Apache Tomcat/Coyote Jserv – Buffer Overflow**  
+  A flaw in the Jserv protocol implementation could be exploited to inject and execute malicious code.
 
-📌 **Recommended Action:**  
-Immediately upgrade all affected services to secure, patched versions to eliminate these critical risks.
-
----
-
-## ⚠️ High-Risk Findings
-
-In addition to the above, several services were flagged for serious vulnerabilities:
-
-- **MySQL (5.0.51a):**  
-  This outdated database engine is vulnerable to privilege escalation and other known exploits.
-
-- **Apache HTTP Server (2.2.8):**  
-  The web server version in use has multiple documented vulnerabilities that could expose sensitive data.
-
-- **Telnet (Port 23):**  
-  Telnet transmits data in plaintext, including credentials, making it highly susceptible to interception.
-
-- **Samba Service:**  
-  A buffer overflow vulnerability was identified that could allow remote code execution with root-level access.
-
-📌 **Recommended Action:**  
-Update all legacy services to current versions and disable insecure protocols like Telnet to reduce exposure.
+📌 **Mitigation:**  
+Upgrade all affected services to secure, patched versions immediately to eliminate these critical risks.
 
 ---
 
-## 🧠 Summary & Recommendations
+## ⚠️ Additional Severe Issues
 
-The Metasploitable2 VM presents a highly vulnerable environment, with multiple outdated services and exploitable flaws. These issues offer attackers numerous vectors for intrusion and privilege escalation.
+Several other services were flagged for high-severity vulnerabilities:
 
-### ✅ Key Recommendations:
+- **MySQL 5.0.51a**  
+  This legacy database version is susceptible to privilege escalation and other known exploits.
 
-- Patch all legacy software immediately  
-- Remove or disable unnecessary and insecure services  
-- Deploy a firewall to restrict unauthorized access and mitigate future threats
+- **Apache HTTP Server 2.2.8**  
+  The web server has multiple documented vulnerabilities that could lead to information leakage.
+
+- **Telnet (Port 23)**  
+  Telnet transmits credentials in plaintext, making it highly vulnerable to interception.
+
+- **Samba (NetBIOS/SMB)**  
+  A buffer overflow vulnerability in the Samba service could allow remote code execution with elevated privileges.
+
+📌 **Mitigation:**  
+Update all legacy services to their latest secure versions and disable insecure protocols like Telnet.
 
 ---
 
-This report supports the internship’s Task 2 objectives under **Network Security & Scanning**, and complements your Nmap and firewall configuration findings. Be sure to include this in your GitHub repo alongside your scan reports and demo video.
+## 📊 Vulnerability Matrix
+
+| Service         | Port | Vulnerability Type         | Severity   | Recommended Action         |
+|----------------|------|-----------------------------|------------|----------------------------|
+| vsftpd 2.3.4    | 21   | Backdoor Access             | Critical   | Upgrade to patched version |
+| UnrealIRCd      | 6667 | Remote Code Execution       | Critical   | Apply security patch       |
+| Apache Tomcat   | 8180 | Buffer Overflow             | Critical   | Update Jserv module        |
+| MySQL           | 3306 | Privilege Escalation        | High       | Upgrade to latest version  |
+| Apache HTTP     | 80   | Info Disclosure             | High       | Patch vulnerabilities      |
+| Telnet          | 23   | Plaintext Credential Leak   | High       | Disable service            |
+| Samba           | 445  | Remote Code Execution       | High       | Patch and restrict access  |
+
+---
+
+## 🧠 Final Analysis & Recommendations
+
+The Metasploitable2 VM is intentionally vulnerable, but this scan highlights real-world risks that exist in outdated systems. The presence of backdoors, buffer overflows, and plaintext protocols provides multiple attack vectors.
+
+### ✅ Action Plan:
+
+- Patch all outdated software immediately  
+- Disable unnecessary and insecure services  
+- Implement firewall rules to restrict access  
+- Monitor network traffic for suspicious activity
+
+---
+
+## 🔗 Related Reports
+
+- [Nmap Scan Report](./nmap_scan_report.md)  
+- [Firewall Configuration](./iptables_firewall_configuration_report.md)  
+- [Wireshark Traffic Analysis](./wireshark_packet_analysis_report.md)  
+- [Reconnaissance Techniques](./reconnaissance.md)
+
+---
+
+📌 This report fulfills the vulnerability scanning component of **Task 2: Network Security & Scanning** under the ApexPlanet internship. Be sure to include this in your GitHub repo and reference it in your demo video.

@@ -1,7 +1,7 @@
 # 🛡️ Vulnerability Assessment – Metasploitable2 VM
 
-**Date:** September 19, 2025  
-**Analyst:** Pratham Khairmode  
+**Date:** October 07, 2025  
+**Analyst:** Malki Shaik Nikhat Naaz  
 **Internship Task:** Network Security & Scanning – Task 2  
 **Objective:**  
 To perform a comprehensive vulnerability scan on the Metasploitable2 virtual machine, identify exploitable services and misconfigurations, and recommend mitigation strategies.

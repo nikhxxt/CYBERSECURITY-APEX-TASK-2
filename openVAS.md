@@ -1,46 +1,46 @@
-# 🛡️ Vulnerability Assessment – Metasploitable2 VM
+# 🔐 Metasploitable2 Vulnerability Scan – OpenVAS Report
 
 **Date:** October 07, 2025  
 **Analyst:** Malki Shaik Nikhat Naaz  
-**Internship Task:** Network Security & Scanning – Task 2  
-**Objective:**  
-To perform a comprehensive vulnerability scan on the Metasploitable2 virtual machine, identify exploitable services and misconfigurations, and recommend mitigation strategies.
+**Internship Track:** Task 2 – Network Security & Scanning  
+**Purpose:**  
+To conduct a full vulnerability assessment of the Metasploitable2 VM, identify exploitable services and misconfigurations, and propose remediation strategies.
 
 ---
 
-## 🧪 Scan Summary
+## 🧪 Scan Overview
 
-A full-system vulnerability scan was conducted using an industry-standard assessment tool. The scan targeted all open ports and services running on the Metasploitable2 VM. The results revealed a wide range of critical and high-severity issues, primarily due to outdated software and insecure configurations.
-
----
-
-## 🚨 Major Exploitable Risks
-
-The following vulnerabilities pose immediate threats and could allow attackers to gain full control of the system:
-
-- **vsftpd 2.3.4 – Backdoor Access**  
-  This FTP service contains a known backdoor that allows unauthenticated users to gain root access.
-
-- **UnrealIRCd 3.2.8.1 – Remote Code Execution**  
-  A hidden backdoor in this IRC daemon enables attackers to execute arbitrary commands remotely.
-
-- **Apache Tomcat/Coyote Jserv – Buffer Overflow**  
-  A flaw in the Jserv protocol implementation could be exploited to inject and execute malicious code.
-
-📌 **Mitigation:**  
-Upgrade all affected services to secure, patched versions immediately to eliminate these critical risks.
+An in-depth scan was performed using OpenVAS, targeting all active ports and services on the Metasploitable2 virtual machine. The scan revealed a range of critical and high-severity vulnerabilities, mostly due to outdated software and insecure protocols.
 
 ---
 
-## ⚠️ Additional Severe Issues
+## 🚨 Critical Findings
 
-Several other services were flagged for high-severity vulnerabilities:
+These vulnerabilities pose immediate threats and could lead to full system compromise:
+
+- **vsftpd 2.3.4 – Root Access via Backdoor**  
+  This FTP daemon contains a known backdoor that allows unauthenticated users to gain root privileges.
+
+- **UnrealIRCd 3.2.8.1 – Remote Command Execution**  
+  A hidden backdoor in this IRC service enables attackers to execute arbitrary commands remotely.
+
+- **Apache Tomcat/Coyote Jserv – Buffer Overflow Risk**  
+  A flaw in the Jserv protocol could be exploited to inject and run malicious code.
+
+📌 **Remediation:**  
+Upgrade all vulnerable services to patched versions to eliminate these critical risks.
+
+---
+
+## ⚠️ High-Risk Vulnerabilities
+
+Additional services were flagged for serious security flaws:
 
 - **MySQL 5.0.51a**  
-  This legacy database version is susceptible to privilege escalation and other known exploits.
+  This legacy database version is vulnerable to privilege escalation and other known exploits.
 
 - **Apache HTTP Server 2.2.8**  
-  The web server has multiple documented vulnerabilities that could lead to information leakage.
+  The web server has multiple documented flaws that could expose sensitive data.
 
 - **Telnet (Port 23)**  
   Telnet transmits credentials in plaintext, making it highly vulnerable to interception.
@@ -48,15 +48,15 @@ Several other services were flagged for high-severity vulnerabilities:
 - **Samba (NetBIOS/SMB)**  
   A buffer overflow vulnerability in the Samba service could allow remote code execution with elevated privileges.
 
-📌 **Mitigation:**  
-Update all legacy services to their latest secure versions and disable insecure protocols like Telnet.
+📌 **Remediation:**  
+Update all legacy services and disable insecure protocols like Telnet to reduce exposure.
 
 ---
 
 ## 📊 Vulnerability Matrix
 
-| Service         | Port | Vulnerability Type         | Severity   | Recommended Action         |
-|----------------|------|-----------------------------|------------|----------------------------|
+| Service         | Port | Issue Type                  | Severity   | Recommended Action         |
+|----------------|------|-----------------------------|------------|-----------------------------|
 | vsftpd 2.3.4    | 21   | Backdoor Access             | Critical   | Upgrade to patched version |
 | UnrealIRCd      | 6667 | Remote Code Execution       | Critical   | Apply security patch       |
 | Apache Tomcat   | 8180 | Buffer Overflow             | Critical   | Update Jserv module        |
@@ -67,20 +67,20 @@ Update all legacy services to their latest secure versions and disable insecure 
 
 ---
 
-## 🧠 Final Analysis & Recommendations
+## 🧠 Analyst Reflection & Recommendations
 
-The Metasploitable2 VM is intentionally vulnerable, but this scan highlights real-world risks that exist in outdated systems. The presence of backdoors, buffer overflows, and plaintext protocols provides multiple attack vectors.
+Metasploitable2 is designed to be vulnerable, but this scan illustrates how similar configurations in real-world systems could be exploited. The presence of backdoors, buffer overflows, and plaintext protocols provides multiple entry points for attackers.
 
 ### ✅ Action Plan:
 
-- Patch all outdated software immediately  
-- Disable unnecessary and insecure services  
-- Implement firewall rules to restrict access  
-- Monitor network traffic for suspicious activity
+- Apply patches to all outdated services  
+- Remove or disable unnecessary and insecure protocols  
+- Configure firewall rules to block unauthorized access  
+- Monitor network traffic for anomalies and suspicious behavior
 
 ---
 
-## 🔗 Related Reports
+## 🔗 Supporting Reports
 
 - [Nmap Scan Report](./nmap_scan_report.md)  
 - [Firewall Configuration](./iptables_firewall_configuration_report.md)  
@@ -89,4 +89,4 @@ The Metasploitable2 VM is intentionally vulnerable, but this scan highlights rea
 
 ---
 
-📌 This report fulfills the vulnerability scanning component of **Task 2: Network Security & Scanning** under the ApexPlanet internship. Be sure to include this in your GitHub repo and reference it in your demo video.
+

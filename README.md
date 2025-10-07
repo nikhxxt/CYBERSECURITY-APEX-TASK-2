@@ -38,7 +38,7 @@ This task focuses on foundational cybersecurity techniques used in penetration t
 ## 📽️ Demo Video
 
 Watch the full walkthrough of Task 2 implementation and findings:  
-🔗 [Demo Video Link]([https://your-demo-link.com](https://www.linkedin.com/posts/nikhat-naaz-malki-shaik-8240aa31a_cybersecurity-internship-apexplanet-activity-7381250580087844864-PUnb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFDQ0hwBssVRSllABDcGpxoifixeymEi_nY))
+🔗 [Demo Video Link](https://www.linkedin.com/posts/nikhat-naaz-malki-shaik-8240aa31a_cybersecurity-internship-apexplanet-activity-7381250580087844864-PUnb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFDQ0hwBssVRSllABDcGpxoifixeymEi_nY))
 
 ---
 
@@ -57,6 +57,13 @@ Watch the full walkthrough of Task 2 implementation and findings:
 ## 📝 Submission Note
 
 This repository fulfills all requirements for **Task 2: Network Security & Scanning** under the ApexPlanet internship. All reports are documented in Markdown and validated through hands-on testing in a controlled lab environment.
+
+## 📜 License
+
+This project is licensed under the MIT License.  
+You are free to use, modify, and distribute this software with proper attribution.
+
+
 
 
 

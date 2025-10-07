@@ -1,8 +1,8 @@
 
 # 🔒 Firewall Configuration Using iptables
 
-**Date:** September 19, 2025  
-**Author:** Pratham Khairmode  
+**Date:** October 7, 2025  
+**Author:** Malki Shaik Nikhat Naaz
 **Purpose:** Establish a secure firewall using `iptables` with a default-deny policy, allow essential traffic, and dynamically block port scans.
 
 ---

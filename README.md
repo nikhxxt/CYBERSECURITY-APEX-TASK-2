@@ -1,34 +1,62 @@
 # 🛡️ CYBERSECURITY APEX TASK 2
 
+![Status](https://img.shields.io/badge/Task-Completed-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Markdown](https://img.shields.io/badge/Format-Markdown-lightgrey)
+
 **Internship Program:** ApexPlanet  
 **Timeline:** Days 13–24  
-**Focus:** Reconnaissance, Scanning, Firewall Configuration
+**Focus Areas:** Reconnaissance · Scanning · Firewall Configuration · Vulnerability Analysis · Traffic Inspection
 
-## 📁 Contents
-
-- [Nmap Scan Report](./nmap_scan_report.md)
-- [Firewall Configuration Report](./iptables_firewall_configuration_report.md)
+---
 
 ## 🎯 Objectives
 
-- Perform passive and active reconnaissance
-- Conduct TCP/UDP scans with Nmap
-- Detect OS and service versions
-- Configure iptables firewall with port scan detection
-- Analyze vulnerabilities using OpenVAS/Nessus
-- Capture and inspect network traffic with Wireshark
+This task focuses on foundational cybersecurity techniques used in penetration testing and network defense:
 
-## 🔗 Demo Video
+- 🔍 Perform passive and active reconnaissance
+- 📡 Conduct TCP/UDP scans using Nmap
+- 🧠 Detect operating system and service versions
+- 🔒 Configure iptables firewall with dynamic port scan detection
+- 🧪 Analyze vulnerabilities using OpenVAS or Nessus Essentials
+- 📊 Capture and inspect HTTP, DNS, and FTP traffic using Wireshark
 
-Watch the full walkthrough of Task 2:
-[Demo Video Link](https://your-demo-link.com)
+---
+
+## 📁 Included Reports
+
+| Report Title | Description |
+|--------------|-------------|
+| [Nmap Scan Report](./nmap_scan_report.md) | TCP/UDP scans, OS fingerprinting, service enumeration |
+| [Firewall Configuration Report](./iptables_firewall_configuration_report.md) | Default-deny policy, port scan detection, validation |
+| [Vulnerability Assessment – OpenVAS](./openVAS.md) | Full-system scan of Metasploitable2 with remediation |
+| [Wireshark Packet Analysis](./wireshark_packet_analysis_report.md) | Protocol inspection, FTP credential exposure, SYN flood |
+| [Reconnaissance Techniques](./reconnaissance.md) | Passive and active recon methods with examples |
+
+---
+
+## 📽️ Demo Video
+
+Watch the full walkthrough of Task 2 implementation and findings:  
+🔗 [Demo Video Link](https://your-demo-link.com)
+
+---
+
+## ✅ Deliverables Checklist
+
+- [x] Nmap Scan Report  
+- [x] Firewall Configuration  
+- [x] Vulnerability Assessment  
+- [x] Wireshark Traffic Analysis  
+- [x] Reconnaissance Documentation  
+- [x] GitHub Documentation  
+- [x] 5-Minute Demo Video
+
+---
+
+## 📝 Submission Note
+
+This repository fulfills all requirements for **Task 2: Network Security & Scanning** under the ApexPlanet internship. All reports are documented in Markdown and validated through hands-on testing in a controlled lab environment.
 
 
-## 📽️ Deliverables
-
-- ✅ Scan Reports  
-- ✅ Firewall Rules  
-- ✅ Vulnerability Analysis  
-- ✅ GitHub Documentation  
-- ✅ Demo Video (5 min)
 

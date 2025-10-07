@@ -18,6 +18,12 @@
 - Analyze vulnerabilities using OpenVAS/Nessus
 - Capture and inspect network traffic with Wireshark
 
+## 🔗 Demo Video
+
+Watch the full walkthrough of Task 2:
+[Demo Video Link](https://your-demo-link.com)
+
+
 ## 📽️ Deliverables
 
 - ✅ Scan Reports  

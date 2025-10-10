@@ -41,7 +41,7 @@
 
 ### VIDEO
 
-* `video.mp4` — 5-minute demo walkthrough
+* `video.mp4` — demo walkthrough
 
 ### LICENSE
 

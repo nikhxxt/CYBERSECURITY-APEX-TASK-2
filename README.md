@@ -161,7 +161,7 @@ sudo tshark -i eth0 -c 100 -w /tmp/task2_capture.pcap
 
 ## License & Contact
 
-This project is licensed under the **MIT License** — see `LICENSE`.  
+This project is licensed under the MIT License — see [`LICENSE`](LICENSE).
 Repo: [https://github.com/nikhxxt/CYBERSECURITY-APEX-TASK-2](https://github.com/nikhxxt/CYBERSECURITY-APEX-TASK-2)
 
 
